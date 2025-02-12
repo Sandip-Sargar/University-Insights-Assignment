@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Study MBBS Abroad - Affordable medical education in top countries. Apply now!">
+    <title>Study MBBS Abroad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white text-center p-10">
+        <h1 class="text-4xl font-bold">Study MBBS Abroad</h1>
+        <p class="text-lg mt-2">Affordable medical education in top countries</p>
+        <button class="mt-4 bg-yellow-400 text-blue-800 px-6 py-2 rounded-lg font-semibold">
+            Apply Now
+        </button>
+    </section>
+
+    <!-- Why Study MBBS Abroad -->
+    <section class="p-6 text-center">
+        <h2 class="text-2xl font-bold">Why Study MBBS Abroad?</h2>
+        <ul class="mt-4 space-y-2">
+            <li>✔ Affordable tuition fees</li>
+            <li>✔ Globally recognized degrees</li>
+            <li>✔ No entrance exams</li>
+        </ul>
+    </section>
+
+    <!-- Top Countries -->
+    <section class="p-6">
+        <h2 class="text-2xl font-bold text-center">Top Countries</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+            <div class="bg-white p-4 rounded-lg shadow">Russia</div>
+            <div class="bg-white p-4 rounded-lg shadow">Uzbekistan</div>
+            <div class="bg-white p-4 rounded-lg shadow">Kazakhstan</div>
+            <div class="bg-white p-4 rounded-lg shadow">Philippines</div>
+            <div class="bg-white p-4 rounded-lg shadow">Georgia</div>
+            <div class="bg-white p-4 rounded-lg shadow">Kyrgyzstan</div>
+            <div class="bg-white p-4 rounded-lg shadow">Egypt</div>
+        </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="p-6 text-center">
+        <h2 class="text-2xl font-bold">Admission Process & Eligibility</h2>
+        <ol class="mt-4 space-y-2">
+            <li>1. Choose a country</li>
+            <li>2. Submit your application</li>
+            <li>3. Receive admission confirmation</li>
+            <li>4. Apply for a visa</li>
+        </ol>
+    </section>
+
+    <!-- Lead Generation Form -->
+    <section class="p-6 bg-white shadow rounded-lg max-w-lg mx-auto">
+        <h2 class="text-2xl font-bold text-center">Apply Now</h2>
+        <form id="leadForm" class="mt-4">
+            <input type="text" id="name" placeholder="Your Name" class="w-full p-2 border rounded mb-2" required>
+            <input type="email" id="email" placeholder="Your Email" class="w-full p-2 border rounded mb-2" required>
+            <input type="tel" id="phone" placeholder="Your Phone" class="w-full p-2 border rounded mb-2" required>
+            <select id="country" class="w-full p-2 border rounded mb-2">
+                <option value="">Select Country</option>
+                <option value="Russia">Russia</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+            </select>
+            <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded">Submit</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById("leadForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Form submitted successfully!");
+        });
+    </script>
+</body>
+</html>
